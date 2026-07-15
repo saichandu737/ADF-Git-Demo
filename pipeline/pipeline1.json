@@ -1,0 +1,32 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://jsonplaceholder.typicode.com/posts",
+					"body": {
+						"title": "ADF Test",
+						"body": "Testing Web Activity",
+						"userId": 1
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-07-11T06:09:54Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

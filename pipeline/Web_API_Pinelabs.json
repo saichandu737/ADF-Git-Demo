@@ -1,0 +1,43 @@
+{
+	"name": "Web_API_Pinelabs",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web_API_Pinelabs",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.00:10:00",
+					"retry": 1,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"headers": {
+						"Content-Type": "application/json",
+						"Accept": "application/json"
+					},
+					"url": "https://api-c.pinelabs.com/transactions/summary?page=0&size=10000",
+					"body": {
+						"fromDate": "2026-07-01T00:00:00Z",
+						"toDate": "2026-07-01T23:59:59Z"
+					},
+					"authentication": {
+						"type": "Basic",
+						"username": "ADITYA_BIRLA_LIFESTYLE_BRA_N28N1IAJ",
+						"password": {
+							"type": "SecureString",
+							"value": "**********"
+						}
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-07-11T06:00:21Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

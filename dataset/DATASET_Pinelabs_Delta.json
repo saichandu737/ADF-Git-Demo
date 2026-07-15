@@ -1,0 +1,161 @@
+{
+	"name": "DATASET_Pinelabs_Delta",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDatabricksDeltaLake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "default"
+		},
+		"schema": [
+			{
+				"name": "acquirer",
+				"type": "string"
+			},
+			{
+				"name": "amount",
+				"type": "string"
+			},
+			{
+				"name": "authTransactionAmount",
+				"type": "string"
+			},
+			{
+				"name": "batchNo",
+				"type": "string"
+			},
+			{
+				"name": "batchStatus",
+				"type": "string"
+			},
+			{
+				"name": "billingTransactionId",
+				"type": "string"
+			},
+			{
+				"name": "cardPanCheckforSaleComplete",
+				"type": "string"
+			},
+			{
+				"name": "city",
+				"type": "string"
+			},
+			{
+				"name": "cloudRefId",
+				"type": "long"
+			},
+			{
+				"name": "coBrandedCardName",
+				"type": "string"
+			},
+			{
+				"name": "contactlessMode",
+				"type": "string"
+			},
+			{
+				"name": "currency",
+				"type": "string"
+			},
+			{
+				"name": "externalBillingId",
+				"type": "string"
+			},
+			{
+				"name": "hardwareId",
+				"type": "string"
+			},
+			{
+				"name": "hardwareModel",
+				"type": "string"
+			},
+			{
+				"name": "mid",
+				"type": "string"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "paymentMode",
+				"type": "string"
+			},
+			{
+				"name": "posId",
+				"type": "string"
+			},
+			{
+				"name": "routePreauthtoOtherAcquirer",
+				"type": "string"
+			},
+			{
+				"name": "rrn",
+				"type": "string"
+			},
+			{
+				"name": "storeId",
+				"type": "string"
+			},
+			{
+				"name": "storeName",
+				"type": "string"
+			},
+			{
+				"name": "tid",
+				"type": "string"
+			},
+			{
+				"name": "transactionDate",
+				"type": "string"
+			},
+			{
+				"name": "transactionId",
+				"type": "string"
+			},
+			{
+				"name": "txnStatus",
+				"type": "string"
+			},
+			{
+				"name": "txnType",
+				"type": "string"
+			},
+			{
+				"name": "upiPayerName",
+				"type": "string"
+			},
+			{
+				"name": "upiPayerVpa",
+				"type": "string"
+			},
+			{
+				"name": "zone",
+				"type": "string"
+			},
+			{
+				"name": "authCode",
+				"type": "string"
+			},
+			{
+				"name": "cardColour",
+				"type": "string"
+			},
+			{
+				"name": "settlementDate",
+				"type": "string"
+			},
+			{
+				"name": "emiMonth",
+				"type": "string"
+			},
+			{
+				"name": "LoadTimestamp",
+				"type": "timestamp"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

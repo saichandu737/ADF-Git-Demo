@@ -1,0 +1,15 @@
+{
+	"name": "ADF-Bix-Dev",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bca07857-00f7-472a-af73-31443622833f",
+		"tenantId": "df3a163e-24ba-4b8f-9aee-ae7823aad6fe"
+	}
+}

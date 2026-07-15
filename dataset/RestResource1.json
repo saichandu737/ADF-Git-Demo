@@ -1,0 +1,27 @@
+{
+	"name": "RestResource1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "bixrestservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"g_todate": {
+				"type": "string"
+			},
+			"g_fromdate": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@concat(\n'/fdsnws/event/1/query?format=geojson&starttime=',\ndataset().g_fromdate,\n'&endtime=',\ndataset().g_todate\n)",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
